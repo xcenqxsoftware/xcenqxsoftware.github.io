@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style-4.css">
 	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body onload="dom()">
 			<h1 style="text-align: center;">XCENQX SOFTWARE</h1>
 	<nav class="style-4">
 		<ul class="menu-4">
@@ -51,6 +51,15 @@
 
 
 	</div>
-
+<script type="text/javascript">
+	var w = window.innerWidth;
+	function dom(){
+		if(w < 900){
+			window.location.replace('http://xcenqxsoftware.github.io/no-mobile.html');
+		}else{
+			console.log('')
+		}
+	}
+</script>
 </body>
 </html>
